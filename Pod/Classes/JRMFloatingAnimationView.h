@@ -110,5 +110,11 @@ typedef NS_ENUM(NSInteger, JRMFloatingShape) {
  */
 - (void)animate;
 
+/*  My code */
+/**
+ *  Alternative "Release" a floating object with tap gesture recognizer.
+ */
+- (void)animateWithTap:(UITapGestureRecognizer *)gestureRecognizer;
+
 
 @end
