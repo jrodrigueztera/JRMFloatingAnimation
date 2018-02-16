@@ -97,7 +97,7 @@
     self.firstAnimation = NO;
 }
 /*  My code */
-- (void)animateWithTap:(UITapGestureRecognizer *)gestureRecognizer{
+- (void)animateWithTap:(UITapGestureRecognizer *)tapGesture{
     if (self.firstAnimation) {
         if (self.animationWidth) {
             self.customWidth = YES;
@@ -134,7 +134,7 @@
     JRMFloatingImageView *floatingImageView = [[JRMFloatingImageView alloc] initWithImage:image];
     /*  My code */
     floatingImageView.userInteractionEnabled = TRUE;
-    [floatingImageView addGestureRecognizer:gestureRecognizer];
+    [floatingImageView addGestureRecognizer:_gestureRecognizer];
     /*  My code */
     
     if (self.varyAlpha) {

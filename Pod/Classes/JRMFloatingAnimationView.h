@@ -95,6 +95,9 @@ typedef NS_ENUM(NSInteger, JRMFloatingShape) {
  */
 @property (strong, nonatomic) void (^imageViewAnimationCompleted)(UIImageView *);
 
+/*  My code */
+@property (strong, nonatomic) UITapGestureRecognizer* gestureRecognizer;
+
 /**
  *  Must init the animation with a starting point, or you may experience unintended behavior.
  */
